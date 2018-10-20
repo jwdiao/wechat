@@ -1,0 +1,23 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'>
+  <image class='detail_img' src='{{isMusicPlay ? detailObj.music.coverImgUrl : detailObj.detail_img}}'></image>
+  <image catchtap='handleMusicPlay' class='music_img' src='{{isMusicPlay?"/images/music/music-start.png":"/images/music/music-stop.png"}}'></image>
+<view class='avatar_date'>
+    <image class='view-avatar' src='{{detailObj.avatar}}'></image>
+    <text>{{detailObj.author}}</text>
+    <text>发布与</text>
+    <text>{{detailObj.date}}</text>
+</view>
+<text class='company'>{{detailObj.title}}</text>
+<view class='collection_share_container'>
+  <view class='imgContainer'>
+    <image catchtap='handleCollection' src= '{{isCollection ? "/images/icon/collection.png" : "/images/icon/collection-anti.png"}}'></image>
+    <image src='/images/icon/share-anti.png'></image>   
+  </view>
+   <view class='line'></view>
+</view>
+<button class='share'>转发此文章</button>
+<text class='content'>{{detailObj.detail_content}}</text>
+
+</view>
+

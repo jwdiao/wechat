@@ -1,0 +1,12 @@
+<!--pages/movieolist/movieolist.wxml-->
+<view wx:for='{{moviesArr}}' wx:key='{{index}}'>
+	<view catchtap='toMovieDetail' class='moviesContainer'>
+		<image class='movie_img' src='{{item.images.large}}'></image>
+		<view class='movie_info'>
+			<text class='movie_name'>{{item.original_title}}</text>
+			<text class='movie_year'>年份： {{item.year}}</text>
+			<text class='movie_dir'>导演: {{item.directors[0].name}}</text>
+		</view>
+		<text class='movie_rating'>{{item.rating.average}}</text>
+	</view>
+</view>

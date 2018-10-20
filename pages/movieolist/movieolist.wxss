@@ -1,0 +1,41 @@
+/* pages/movieolist/movieolist.wxss */
+.moviesContainer {
+	display: flex;
+	padding: 10rpx;
+	border: 1rpx solid #eee;
+}
+
+.movie_img {
+	width: 128rpx;
+	height: 128rpx;
+	margin-right: 20rpx;
+}
+
+.movie_info {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.movie_name {
+	font-size: 32rpx;
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.movie_year{
+	font-size: 28rpx;
+	color: #666;
+	margin: 7rpx 0;
+}
+.movie_dir {
+	font-size: 30rpx;
+	color: #999;
+}
+
+.movie_rating {
+	font-size: 40rpx;
+	font-weight: bold;
+	color: red;
+}
